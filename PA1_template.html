@@ -205,9 +205,10 @@ ggplot(data2,aes(x=interval,y=steps))+geom_line()+
 </div>
 <div id="the-5-minute-interval-that-on-average-contains-the-maximum-number-of-steps" class="section level3">
 <h3>2. The 5-minute interval that, on average, contains the maximum number of steps</h3>
-<pre class="r"><code>moststeps&lt;-data2[which.max(data2$interval),]</code></pre>
+<pre class="r"><code>moststeps&lt;-data2[which.max(data2$steps),]
+timemoststeps&lt;-moststeps$interval</code></pre>
 <ul>
-<li>Most Steps at: 2355, 1.0754717</li>
+<li>Most Steps at: 835</li>
 </ul>
 </div>
 </div>

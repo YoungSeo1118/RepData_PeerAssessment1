@@ -40,9 +40,10 @@ ggplot(data2,aes(x=interval,y=steps))+geom_line()+
 
 ### 2. The 5-minute interval that, on average, contains the maximum number of steps
 ```{r}
-moststeps<-data2[which.max(data2$interval),]
+moststeps<-data2[which.max(data2$steps),]
+timemoststeps<-moststeps$interval
 ```
-* Most Steps at: `r moststeps`
+* Most Steps at: `r timemoststeps`
 
 ## Imputing missing values
 ### 1. Total number of missing data
